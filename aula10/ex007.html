@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>somando valores</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+            background: rgb(77, 77, 221);
+            color: aqua;
+            
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+            color: aquamarine;
+        }
+        div#quad{
+            margin-left: 600px;
+            position: relative;
+            margin-top: 50px;
+        }
+        img{
+            width: 150px;
+            margin-left: 120px;
+            background: white;
+        }
+        table{
+            background: white;
+                 
+            height: 400px;       
+        }
+        strong{
+            margin-left: 300px;
+            font: normal 150pt arial;
+            
+        }
+        hr{
+            width: 2000px;
+            
+        }
+              
+        
+    
+    </style>
+</head>
+<body>
+  
+   <hr color="black"> 
+  <Strong>Calculadora</Strong>
+  <hr color="black" >
+            
+  <div id="quad">
+   <table border="3" > 
+    <tr>
+        <td>
+    <img src="https://thumbs.dreamstime.com/b/calculadora-criativa-logo-design-vetora-art-121475468.jpg">
+    <h1>Somando Valores</h1>
+    <input type="number" name="txt1" id="txt1"> +
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resposta</div>
+         </td>
+    </tr>
+    </table>
+  </div>
+   <script>
+       function somar(){
+       var n1 = window.document.getElementById('txt1')
+       var n2 = window.document.getElementById('txt2')
+       var res = window.document.getElementById('res')
+       var t1 = Number(n1.value)
+       var t2 = Number(n2.value)
+       var s = t1 + t2
+       res.innerHTML = 'a soma entre '+t1+' e '+t2+' é igual : '+s
+       
+       }
+
+       
+   
+   </script>
+</body>
+</html>
