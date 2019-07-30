@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pais de Origem</title>
+    <style>
+        button{
+            background: rgb(159, 204, 159);
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <hr>
+    Qual sua nacionalidade :<input type="text" name="txtp" id="txtp">
+    <button onclick="nacao()"><strong>Verificar</strong></button>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function nacao(){
+            var nac = window.document.getElementById('txtp')
+            var res = window.document.getElementById('res')
+            var n = nac.value 
+            
+           
+
+            if (n != 'brasil'){
+                res.style.color ='red'
+                res.innerHTML = 'seu pais de origin é: '+n+' | voce é estrangeiro!|' 
+            }
+            else{
+                res.style.color ='green'             
+                res.innerHTML = 'seu pais de origin é: '+n+' |voce é brasileiro!|'
+            }
+             
+        }
+        
+    
+    
+    </script>
+    
+</body>
+</html>
