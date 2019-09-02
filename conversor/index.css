@@ -1,0 +1,62 @@
+header{
+    text-align: center;
+    color: cornflowerblue;
+   
+}
+footer{
+    text-align: center;
+    color: cornflowerblue;
+}
+
+img{
+    width: 100px;
+    margin-top: 100px;
+    
+}
+section{
+    background: yellowgreen;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(216, 207, 79);
+}
+body{
+    background: rgb(14, 201, 154)
+}
+li{
+    color: cornflowerblue;
+}
+p{
+    color: cornflowerblue;
+}
+fieldset#relo{
+    width: 300px;
+    margin-left: 1250px;
+    box-shadow: 5px 5px 10px rgb(216, 207, 79);
+    color: cornflowerblue;
+    background: whitesmoke;
+    font-style:initial;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+fieldset#corpo{
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(216, 207, 79);
+    margin-top: 50px;
+    background: whitesmoke;
+}
+
+fieldset#cota{
+    border-radius: 10px;
+    width: 200px;
+    margin-top: -80px;
+    background: whitesmoke;
+    box-shadow: 5px 5px 10px rgb(216, 207, 79);
+    font-style: initial;
+    font-size: 10px;
+    color: cornflowerblue;
+}

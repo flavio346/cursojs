@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="relogio()">
+    <fieldset id="relo">
+        
+
+    </fieldset> 
+    <fieldset id="cota">
+        Cotaçao Das Principais Moedas &#128181</br>
+        <hr color="">
+        <h2 id="dolar"></h2>
+        <h2 id="real"></h2>
+        
+
+    </fieldset>
+    <fieldset  id="corpo">
+    <header>
+         <h1>Conversor de Moedas<img src="/conversor/imagem/money.jpg"></h1> 
+         
+
+    </header>
+
+    <section>
+         <div id="conbr">
+                <li>Real para Dolar &#128178</li>
+                <input type="number" id="txtbr" placeholder=" Insira um Valor em BRL"></br>
+                
+                <input type="button" onclick="paradolar()" value="Converter &#128259" style="color: cadetblue">
+                <p id="resdolar">USD&#128178 : </p>
+        
+    </section>
+    <br>
+    <section>
+        <div id="condr">
+            <li>Dolar para real &#128178</li>
+            <input type="number" id="txtdr" placeholder="Insira um Valor em USD">
+            <input type="button" onclick="parareal()" value="Converter &#128259" style="color: cadetblue">
+            <p id="resreal">BRL&#128178 :</p>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer>
+        <p>&copy; Sistema Flavius</p>
+    </footer>
+    </fieldset>
+
+
+<script src="index.js"></script>    
+</body>
+</html>

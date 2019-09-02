@@ -15,11 +15,22 @@
 </style>
 <body>
     <h1>Ola, mundo!!</h1>
-    <p>Exemplo da aula</p>
+    <p id="dol">Exemplo da aula</p>
     <script>
        
         var nome = window.prompt('qual seu nome?');
-        window.alert('É um Grande Prazer em lhe Conheçer  ' + nome);
+        //window.alert('É um Grande Prazer em lhe Conheçer  ' + nome);
+        fetch('https://economia.awesomeapi.com.br/all')
+            .then(function(response){
+                return response.json()
+            })
+            .then(function(data){
+                console.log(data.USD)
+                var l = document.getElementById('dol')
+                var p = l
+                l.innerHTML = data.USD.name
+                
+            })
     </script>
 </body>
 </html>
